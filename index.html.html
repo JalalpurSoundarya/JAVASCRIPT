@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function showEvenOdd(){
+        var number = prompt("Enter a number")
+        if(number%2==0){
+            alert("Even")
+        }
+        else{
+            alert("Odd")
+        }
+    }
+    
+    function askComparision(){
+     var firstnumber = prompt("Enter first number")
+     var secondnumber = prompt("Enter second number")
+     if(firstnumber > secondnumber){
+        alert("Greater")
+     }
+     else if(firstnumber == secondnumber){
+        alert("Equal")
+     }
+     else {
+        alert("Smaller")
+     } 
+    }
+    function askPermision(){
+        let age = +prompt("Enter your age")
+        let license = prompt("Do you have a valid driver's license(true/false).")
+        if (age >= 18) {
+            if(license == true){
+        alert("Can drive")
+            }
+           else  {
+            alert("Cannot approved")
+           }
+        
+        }
+    else{
+            alert("Cannot drive")
+        }
+    }
+    function askPrompt(){
+    var number1 = prompt("Enter a number1")
+    if (number1>0) {
+        alert("Positive")
+    }
+    else if (number1<0) {
+        alert("Negative")
+    }
+    else{
+        alert("Zero")
+    }}
+</script>
+ <style>
+    button{
+    color:orange;
+     text-decoration: underline;
+     border: transparent;
+    }
+    button:hover{
+        color: rgb(4, 95, 33);
+    }
+</style>
+</head>
+<body>
+    <button  onclick="showEvenOdd()">1.Check given number is even or odd</button> <br><br>
+    <button onclick="askComparision()">2.Check given numbers are Greater(or)Smaller(or)Equal</button> <br><br>
+    <button  onclick="askPermision()">3.Check you can drive or not</button> <br><br>
+    <button onclick="askPrompt()">4.Check given number is + (or) -(or) 0</button> <br>
+    
+</body>
+</html>
