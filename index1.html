@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    //print odd number index values 
+var str = prompt("Enter a string ex:helloworld")
+var output="";
+for(i in str){
+    if(i%2!=0){
+        
+    output=output+str[i];
+      
+}
+}
+    alert("odd number characters of a string are:"+output)
+//print only small letters of string
+var ip =prompt("Enter a string ex:JavaSCRipt")
+ip1=""
+for(i in ip){
+    if(ip[i]==ip[i].toLowerCase()){
+    ip1=ip1+ip[i]
+    
+}
+
+}
+alert("lowercase characters of strind:"+ip1)
+
+//first letter capital strings should print
+var str =["good","hi","Hello","Welcome","students","Bye"]
+var str1=[]
+
+for (i in str){
+    if(str[i][0]==str[i][0].toUpperCase()){
+        str1.push(str[i])
+        
+
+    }
+}
+alert("strings with capitalized first letters:"+str1)
+// multiples of 5 should be print
+var arr=[3,5,10,15,23,22,25,35,56]
+var arr1=[]
+for(i in arr){
+    if(arr[i]%5==0){
+        arr1.push(arr[i])
+        
+    }
+}
+alert("values multiplied by 5:" +arr1)
+
+// last letter of a string should be CAPITAL
+var array=["htmL","csS","javaScrIPT","react","angulaR","nodE","EXPREss"]
+var array2=[]
+for(i in array){
+    if(array[i].at(-1)==array[i].at(-1).toUpperCase()){
+        array2.push(array[i])
+    }
+}
+alert("strings end with capital letters:" +array2)
+
+// alternative strings should convert to CAPITAL
+var item = ["html","css","js","react","angular"]
+var item2=[];
+for(i in item){
+    if(i%2==0){
+        // console.log(item[i])
+    
+    // item2 = item[i]
+    item2.push(item[i].toUpperCase())
+    }
+   
+}
+alert("capitalised strings with odd index:" +item2)
+</script>
+</head>
+<body>
+    
+</body>
+</html>
