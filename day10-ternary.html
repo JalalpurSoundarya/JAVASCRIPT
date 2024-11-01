@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      //Problem 1
+      // Given a variable score, use a ternary operator to determine the performance level: "Excellent"" if score is 90 or above,
+      // "Good" if score is between 60 and 89, "Needs Improvement if score is below 60.
+      // *Test Cases:*
+      // 1. Input:** score 95
+      // *Expected Output:* "Excellent
+     
+      function  prompt1(){
+      var score = +prompt("enter the score: ex:95");
+      score >= 90
+        ? alert("Excellent")
+        : score >= 60
+        ? alert("Good")
+        : alert("Needs Improvements");
+      }
+
+      // Problem 2
+      // Given a variable day, use a ternary operator to check if it's a weekend:
+      // "Weekend"" if day is "Saturday" or ""Sunday""
+      // "Weekday" for any other day.
+      // *Test Cases:*
+      // 1. *Input:* day "Saturday"
+      // **Expected Output: "Weekend""
+      // 2. *Input:* day "Monday"
+      // *Expected Output:* "Weekday"
+      // 3. *Input:* day "Sunday"
+      // **Expected Output: "Weekend"
+     function  prompt2(){
+      var day = prompt("Enter the day name: ex:sunday/saturday etc..");
+      day == "sunday" || day == "saturday"
+        ? alert("Weekend")
+        : alert("weekday");
+      }
+
+      // Problem 3
+      // Given a string LaputString, use the ternary operator to check if it is a palindrome. A string is considered a palindrome if it reads the same forwards and backwards.
+      // *Output:* ""Palindrome" if the string is a palindrome, "Not a Palindrome" otherwise.
+      // *Test Cases:*
+      // 1. *Input:* InputString = "madam"
+      // *Expected Output:* "Palindrome"
+      // 2. *Input:* inputString = "hello"
+      // *Expected Output:* "Not a Palindrome""
+      // 3. *Input:* InputString = "racecar"
+      // *Expected Output:* "Palindrome"
+      // 4. *Input:* inputString = "world""
+      // *Expected Output:* "Not a Palindrome""
+      function prompt3(){
+      var inputString = prompt("Enter the input string: ex:madam");
+      var isPalindrome= "";
+      for (i = inputString.length-1; i >=0; i--) {
+        
+        isPalindrome +=inputString[i]
+         
+         }
+         alert(isPalindrome==inputString?"palindrome":"is not palindrome")
+        }
+      
+
+// Problem 4
+// Input: HELLO
+// Output:
+// H
+// HE
+// HEL HELL
+// HELLO
+ function prompt4(){
+var inputt = prompt("Enter the string")
+var string = "";
+for(i=0;i<=inputt.length-1;i++){
+  string = string+inputt[i]
+  alert(string); 
+}
+
+
+}
+     </script>
+     <style>
+   button{
+    color: white;
+    background-color: blue;
+    padding: 20px;
+    
+    
+   }
+   button:hover{
+    color: black;
+    background-color: chartreuse;
+    box-shadow: 0px 0px 10px 4px;
+   }
+  </style> 
+  </head>
+  <body>
+    <button onclick="prompt1()">marks button</button>
+    <button onclick="prompt2()">days button</button>
+    <button onclick="prompt3()">palindrome button</button>
+    <button onclick="prompt4()">format button</button>
+  </body>
+</html>
