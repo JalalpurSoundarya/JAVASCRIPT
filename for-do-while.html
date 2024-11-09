@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+  var aos = ["mom", "js", "malayalam", "html", "css", "dad"];
+ 
+    let str=[];
+
+     for(i=0;i<=aos.length-1;i++){
+      let str1 = aos[i];
+      let reverse = "";
+      for(j=str1.length-1;j>=0;j--)
+     reverse += str1[j];
+    
+    if(str1 == reverse){
+       str.push(str1)
+    }
+  }
+    alert("palindromes are:"+str.join(","));
+  
+</script>
+</head>
+<body>
+    
+</body>
+</html>
