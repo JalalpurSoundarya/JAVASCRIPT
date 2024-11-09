@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //function to check weather input is even or odd
+        var x =+prompt("enter the number")
+    function isNumber(number){
+    if(number%2==0){
+        alert("number is even")
+    }
+    else{
+        alert("number is odd")
+    }
+
+}
+isNumber(x);
+
+//string is palindrome or not
+var y=prompt("enter a string")
+function isPalindrome(palindrome){
+    var str=[];
+    for(i=palindrome.length-1;i>=0;i--){
+        
+     str +=palindrome[i];
+    }
+     if(str==palindrome){
+    alert("palindrome")
+        }
+else{
+    alert("not a palindrome")
+}
+    }
+isPalindrome(y);
+
+//largest of three numbers
+var a = +prompt("enter first number");
+var b = +prompt("enter second number");
+var c = +prompt("enter third number");
+function num(){
+    if(a>=b && a>=c){
+        alert("largest number is:" +a);
+    }
+    else if(b>=c && b>=a){
+      alert("largest number is:" +b);
+    }
+    else{
+        alert("largest number is:" +c);
+    }
+}
+num();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
